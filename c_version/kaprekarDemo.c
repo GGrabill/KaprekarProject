@@ -6,12 +6,11 @@
 int main(int argc, char **argv) {
 
   if(argc != 2) {
-    printf(stderr, "Usage: %s n\n", argv[0]);
+    printf(stderr, "Usage: %s n\n", argv[0]); //deleted f in front of printf
     exit(1);
   }
 
   int n = atoi(argv[1]);
-  int isKaprekar
 
   if(isKaprekar(n)) {
     printf("%d is a Kaprekar Number!\n", n);
